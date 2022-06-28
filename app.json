@@ -7,7 +7,7 @@
         "shortner"
     ],
     "website": "https://github.com/Shashwat-Shukla/mdisk-ultra-bot",
-    "repository": "https://github.com/Shashwat-Shukla/mdisk-ultra-bot",
+    "repository": "https://github.com/KGN-BOTS/mdisk-ultra-bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token (must add)",
@@ -25,7 +25,26 @@
             "description": "Enter your Custom Footer",
             "value": "eg. JOIN MY CHANNEL"
         },
-        "MDISK_TOKEN": {
+       "CHANNELS": {
+      "description": "Enter True if you want the bot to work in Channels also else Leave it as it is",
+      "value": "",
+      "required": false
+    },
+    "CHANNEL_ID": {
+      "description": "Enter your Channel ID, Leave this to deafault if CHANNELS set to False",
+      "value": "",
+      "required": false
+    },
+    "FORWARD_MESSAGE": {
+      "description": "Enter True if you want to edit forwarded message also in your channel. Entering True will delete the forwarded post in your channel and repost it with shorten link. Leave this to deafault if CHANNELS set to False",
+      "value": "",
+      "required": false
+    },
+    "ADMINS": {
+      "description": "Your Telegram ID and ID of Users you want add as Admin. Separate each ID by comma.",
+      "value": "" 
+     },
+      "MDISK_TOKEN": {
             "description": "Put your MDisk API key here",
             "value": "j219piqFPsQBhba52F4l"
         }
