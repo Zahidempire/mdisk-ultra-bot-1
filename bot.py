@@ -11,17 +11,19 @@ from bs4 import BeautifulSoup
 #from doodstream import DoodStream
 import requests
 import re
+from config import *
 
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
 CHANNEL = environ.get('CUSTOM_FOOTER')
 MDISK_TOKEN = environ.get('MDISK_TOKEN')
-bot = Client('Doodstream bot',
+bot = Client('Doodstream bot',"shortener",
              api_id=API_ID,
              api_hash=API_HASH,
              bot_token=BOT_TOKEN,
-             workers=50,
+             workers=50,plugins=dict(root="plugins"),
+
              sleep_threshold=0)
 
 
@@ -29,12 +31,12 @@ bot = Client('Doodstream bot',
 async def start(bot, message):
     await message.reply(
         f"**Hi, {message.chat.first_name} !!**\n\n"
-        "**I am your Personal MDisk Bot 🤗, Made by @GreyMatter_bots💞 Send me a MDisk Post to see the Magic 😅**")
+        "**I am your Personal MDisk Bot 🤗, Made by @KGN_BOTS 💞 Send me a MDisk Post to see the Magic 😅**")
     
 @bot.on_message(filters.text & filters.private)
 async def Doodstream_uploader(bot, message):
     new_string = str(message.text)
-    conv = await message.reply("Ruko jara Sabar kro ✋")
+    conv = await message.reply("wait, i will confirm my [owner](Its_Zahid_Official_bot) ✋")
     dele = conv["message_id"]
     try:
         Doodstream_link = await multi_Doodstream_up(new_string)
@@ -47,7 +49,7 @@ async def Doodstream_uploader(bot, message):
 @bot.on_message(filters.photo & filters.private)
 async def Doodstream_uploader(bot, message):
     new_string = str(message.caption)
-    conv = await message.reply("Ruko jara Sabar kro ✋")
+    conv = await message.reply("wait, i will confirm my [owner](Its_Zahid_Official_bot) ✋")
     dele = conv["message_id"]
     try:
         Doodstream_link = await multi_Doodstream_up(new_string)
