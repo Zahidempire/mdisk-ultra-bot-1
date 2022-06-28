@@ -21,6 +21,8 @@ Many people Selling it 😂 But now it's FREE
 
 - [x] It's FREE & Original
 
+- [x] Forward Post link convert into your in Channel.
+
 ### Installation
 Create a Account on Heroku & Click on Deploy.
 Setup your Bot Token and MDisk API key & click on Deploy App.
@@ -30,7 +32,7 @@ Start your Bot in Telegram & Enjoy
 #### The Easy Way
 Copy the below link & replace the GitHub-UserName with your username than Deploy using that link.
 
-https://www.heroku.com/deploy?template=https://github.com/GitHub-UserName/mdisk-ultra-bot
+https://www.heroku.com/deploy?template=https://github.com/KGN-BOTS/mdisk-ultra-bot
 
 ##### Required Variables
 
@@ -41,4 +43,4 @@ https://www.heroku.com/deploy?template=https://github.com/GitHub-UserName/mdisk-
 
 ##### Credit
 
-- Me [Shashwat-Shukla](https://github.com/Shashwat-Shukla) For This Repo
+- Me [KGN-BOTS](https://github.com/KGN-BOTS) For This Repo
